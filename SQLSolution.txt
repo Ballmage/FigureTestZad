@@ -34,7 +34,7 @@ VALUES
 	(1, 3),
 	(2, 2);
 
-SELECT Product.productname as "Продукт", Category.categoryname as "Категория"
+SELECT Product.productname as "РџСЂРѕРґСѓРєС‚", Category.categoryname as "РљР°С‚РµРіРѕСЂРёСЏ"
 FROM Product 
 LEFT JOIN CategorysProducts 
 	ON Product.productid = CategorysProducts.ProductId
