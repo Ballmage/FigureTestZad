@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33328.57
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureLib", "FigureTestZad\FigureLib.csproj", "{7C0CF02A-4C3C-40D1-9ABC-3EB04A078BB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FigureLib", "FigureTestZad\FigureLib.csproj", "{7C0CF02A-4C3C-40D1-9ABC-3EB04A078BB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureApp", "FigureApp\FigureApp.csproj", "{0706AB30-F190-4A87-92B7-9346DA2BB4F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FigureApp", "FigureApp\FigureApp.csproj", "{0706AB30-F190-4A87-92B7-9346DA2BB4F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureTest", "FigureTest\FigureTest.csproj", "{86A64C69-2EAA-4AA4-88A6-F477B8BFE39E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FigureTest", "FigureTest\FigureTest.csproj", "{86A64C69-2EAA-4AA4-88A6-F477B8BFE39E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{908DBEA9-8850-4BB2-94B4-2962443B6EDD}"
+	ProjectSection(SolutionItems) = preProject
+		SQLSolution.txt = SQLSolution.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -17,7 +17,7 @@ namespace FigureLib.Figures
             return Math.Sqrt(p * (p - Sides[0]) * (p - Sides[1]) * (p - Sides[2]));
         }
 
-        public bool IsRight(double eps = 1E-5)
+        public bool IsRightTriangle(double eps = 1E-5)
         {
             Array.Sort(Sides);
             return Math.Abs(Math.Pow(Sides[0], 2) + Math.Pow(Sides[1], 2) - Math.Pow(Sides[2], 2)) <= eps;
