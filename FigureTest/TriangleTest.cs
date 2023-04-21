@@ -15,15 +15,26 @@ namespace FigureTest
         private const double Eps = 1E-5;
 
         [Fact]
-        public void CreeatTest()
+        public void Creat1Test()
         {
             Assert.Throws<ArgumentException>(() => new Triangle(5, -6, 2));
+        }
+        [Fact]
+        public void Creat2Test()
+        {
+            Assert.Throws<ArgumentException>(() => new Triangle(5, 123, 2));
         }
         [Fact]
         public void RightTriangleTest()
         {
             Triangle Triangle = new Triangle(3, 4, 5);
             Assert.True(Triangle.IsRightTriangle());
+        }
+        [Fact]
+        public void GetAreatTest()
+        {
+            Triangle Triangle = new Triangle(3, 4, 5);
+            Assert.Equal(6,Triangle.GetArea());
         }
     }
 

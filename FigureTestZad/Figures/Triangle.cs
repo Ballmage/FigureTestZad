@@ -1,5 +1,6 @@
 ﻿using FigureLib.Abstracts;
 using System;
+using System.Linq;
 
 namespace FigureLib.Figures
 {
@@ -7,8 +8,12 @@ namespace FigureLib.Figures
     {
         public Triangle(double size1, double size2, double size3) : base(new[] { size1, size2, size3 })
         {
-            if (size1 + size2 < size3 || size2 + size3 < size1 || size1 + size3 < size2)
+            if (size1 + size2 > size3 && size2 + size3 > size1 && size1 + size3 > size2) { }
+            else
+            {
                 throw new ArgumentException("Треугольника с такими сторонами не существует");
+            }
+                
         }
 
         public override double GetArea()
@@ -19,8 +24,11 @@ namespace FigureLib.Figures
 
         public bool IsRightTriangle(double eps = 1E-5)
         {
-            Array.Sort(Sides);
-            return Math.Abs(Math.Pow(Sides[0], 2) + Math.Pow(Sides[1], 2) - Math.Pow(Sides[2], 2)) <= eps;
+           
+    
+            double maxside = Sides.Max();
+            maxside *= maxside;
+            return maxside + maxside == Sides[0] * Sides[0] + Sides[1] * Sides[1] + Sides[2] * Sides[2];
         }
     }
 }
